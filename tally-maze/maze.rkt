@@ -54,7 +54,7 @@
                          #:contract (integer-in 1 (- width 1))))
                  #:contract (list/c (integer-in 1 (- width 1))
                                     (integer-in 1 (- height 1))
-                                    (or/c 'l 't 'r 'b)))]
+                                    (or/c 0 1 2 3)))]
          [tl (ul-w/h-and-break)
              (let ()
                (define ul-w (list-ref ul-w/h-and-break 0))
